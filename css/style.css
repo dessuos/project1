@@ -13,7 +13,7 @@ body{
 font-family: 'Lora', serif;
 font-weight: 400;
 }
-.font-roboto{
+.font-roboto, .font-roboto a{
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
@@ -22,6 +22,7 @@ header{
     width: 100%;
     background: rgba(0, 0, 0, 0.2);
     position: absolute;
+    z-index: 1;
 }
 
 .banner img{
@@ -32,8 +33,82 @@ object-fit: cover;
 }
 
 .header-flex{
+    height: 100%;
     padding: 0px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.header-nav ul{
+    
+    display: flex;
+    align-items: center;
+
+}
+.header-nav ul li a{
+    font-size: 12px;
+    line-height: 14px;
+    color: seashell;
+    transition: all .3s;
+}
+.header-nav ul li a:hover{
+    color: silver;
+    transition: all .3s;
+
+}
+
+.header-nav ul li{
+margin-right: 25px;
+}
+.header-nav ul li:last-child{
+    margin-right: 0px;
+}
+
+.header-flex-2, 
+.header-social ul{
+display: flex;
+
+}
+.header-social ul li{
+    margin-right: 18px;
+    }
+    .header-nav ul li:last-child{
+        margin-right: 0px;
+    }
+    .header-social{
+        margin: 0px 17px;
+        border-left: 0.5px solid #E5E5E5;
+        border-right: 0.5px solid #E5E5E5;
+        padding: 0px 17px;
+
+    }
+    .banner{
+        position: relative;
+    }
+    .banner-info{
+        position: absolute;
+        width: 530px;
+        left: 70px;
+        bottom: 140px;
+    }  
+    .teg{
+padding: 5px 10px;
+background: rgba(255, 255, 255, 0.15);
+border-radius: 8px;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 10px;
+line-height: 12px;
+color: #FFFFFF;
+    }
+    .middle-line{
+        height: 1px;
+        width: 30px;
+        background: #E5E5E5;
+        margin: 0px;
+        margin-right: 11px;
+        margin-left: 11px;
+        color: silver;
+    }
